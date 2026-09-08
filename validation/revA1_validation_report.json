@@ -1,0 +1,74 @@
+{
+  "revision": "A1",
+  "result": "PASS_WITH_FABRICATION_GATES",
+  "schematic": {
+    "symbols": 42,
+    "embedded_symbol_definitions": 11,
+    "parser": "kiutils PASS"
+  },
+  "pcb": {
+    "footprints": 42,
+    "nets_including_empty": 35,
+    "zones": 2,
+    "routed_tracks": 0,
+    "parser": "kiutils PASS",
+    "release": "BLOCKED_NO_ROUTING_NO_OFFICIAL_DRC_NO_GERBER"
+  },
+  "bom": {
+    "rows": 28,
+    "locked_core_lcsc_ids": 7
+  },
+  "mechanical": {
+    "all_stl_watertight": true,
+    "files": [
+      {
+        "file": "316L_flexure_preview_NOT_FOR_PRINTING.stl",
+        "watertight": true,
+        "faces": 596
+      },
+      {
+        "file": "awa_body_32x49_revA.stl",
+        "watertight": true,
+        "faces": 9470
+      },
+      {
+        "file": "awa_cap_revA.stl",
+        "watertight": true,
+        "faces": 5958
+      },
+      {
+        "file": "awa_electronics_sled_revA.stl",
+        "watertight": true,
+        "faces": 68
+      },
+      {
+        "file": "underwater_ballast_cassette_revA.stl",
+        "watertight": true,
+        "faces": 28
+      },
+      {
+        "file": "underwater_fairing_half_A_revA.stl",
+        "watertight": true,
+        "faces": 3898
+      },
+      {
+        "file": "underwater_fairing_half_B_revA.stl",
+        "watertight": true,
+        "faces": 3906
+      }
+    ]
+  },
+  "autotune": {
+    "synthetic_smoke_test": "PASS",
+    "synchronization_rms_ms": 0.27010676496022085,
+    "promotion_requires_unseen_trip": true
+  },
+  "remaining_gates": [
+    "official footprint verification, especially LPS28DFW against ST TN0018",
+    "PCB routing and KiCad ERC/DRC",
+    "Gerber/drill/CPL independent review",
+    "battery fit and protection verification",
+    "15 m equivalent pressure test",
+    "316L coupon calibration and >=5 kgf survival test"
+  ]
+}

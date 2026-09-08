@@ -1,0 +1,13 @@
+{
+  "board_mm": [
+    12,
+    35,
+    1.0
+  ],
+  "layers": 4,
+  "components": 42,
+  "nets": 34,
+  "all_pads_net_assigned_except_documented_NC": true,
+  "release_status": "BLOCKED_NO_ROUTING_NO_OFFICIAL_DRC_NO_GERBER",
+  "pressure_footprint_status": "REVIEW_AGAINST_ST_TN0018"
+}

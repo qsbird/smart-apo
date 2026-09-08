@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "SmartApoRevA2")(type "KiCad")(uri "${KIPRJMOD}/smart_apo_revA2.kicad_sym")(options "")(descr "Rev.A2 reviewed project symbols"))
+)

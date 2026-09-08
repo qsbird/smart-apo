@@ -1,0 +1,30 @@
+Comment,Designator,Footprint,LCSC Part #,Manufacturer Part,AWA Qty,UNDERWATER Qty,Assembly,Notes
+MCU,U1,TSSOP-20_4.4x6.5mm_P0.65,C529334,STM32G031F8P6,1,1,SMT,64KB Flash / 8KB RAM; stock must be rechecked at order
+6-axis IMU,U2,LGA-14_2.5x3.0mm_P0.5,C2655100,LSM6DSOTR,1,1,SMT,Do not substitute without pin/driver review
+Water-resistant pressure sensor,U3,CCLGA-7_2.8x2.8mm,C3263277,LPS28DFWTR,1,1,SMT,Critical; footprint must be checked against ST TN0018
+24-bit bridge ADC,U4,SOIC-16_3.9x9.9mm_P1.27,C5180029,NAU7802SGI,0,1,SMT,AVDD 3.0V; 320SPS; six-wire bridge
+256Mbit SPI NOR,U5,WSON-8_6x8mm_P1.27,C97522,W25Q256JVEIQ,1,1,SMT,Alternate C5334276 only after package check
+Li-ion charger,U6,SOT-23-5,C424093,MCP73831T-2ACI/OT,1,1,SMT,4.2V version; R3=20k gives nominal 50mA
+3.3V LDO,U7,SOT-23-5,C2887324,TPS7A0233PDBVR,1,1,SMT,Alternate C5142805 TPS7A0233DBVR after review
+N-MOSFET,Q1,SOT-23,,2N7002 or DMN1019USN-7,1,0,SMT,Lock JLC part during order
+Red LED,D1,LED_0805,,High-bright red 0805,1,0,SMT,Optically couple to float light pipe
+Battery pads,J1,2-pad custom,,BATTERY_WIRE_PADS,1,1,Manual,Protected 401020 LiPo 60-80mAh
+Debug/charge pads,J2,POGO_7x1.27mm,,SWD_UART_CHARGE_POGO,1,1,PCB,No connector populated
+Bridge pads,J3,PAD_6x1.27mm,,FULL_BRIDGE_6WIRE,0,1,Manual,E+/E-/S+/S-/A+/A-
+Reed switch,SW1,SMT reed 5mm,,Normally-open SMT reed,1,1,SMT,Wake input only; not in battery current path
+32.768kHz crystal,Y1,2012-2P,,32.768kHz 12.5pF,1,1,SMT,Frequency tolerance <=20ppm preferred
+4.7k 1%,R1 R2,0402,,Generic thick film,2,2,SMT,I2C pullups
+20k 1%,R3,0402,,Generic thick film,1,1,SMT,Charge-program resistor
+1M 1%,R4,0402,,Generic thick film,1,1,SMT,Battery divider upper
+330k 1%,R5,0402,,Generic thick film,1,1,SMT,Battery divider lower
+68R 1%,R6,0402,,Generic thick film,1,0,SMT,LED series
+100k 1%,R7,0402,,Generic thick film,1,0,SMT,MOS gate pulldown
+100R 0.1%,R8 R9,0402,,Low-TCR precision resistor,0,2,SMT,Bridge differential input pair; same lot
+100k 1%,R10,0402,,Generic thick film,1,1,SMT,Reed pullup
+10k 1%,R11,0402,,Generic thick film,1,1,SMT,NRST pullup
+10k 1%,R12,0402,,Generic thick film,1,1,SMT,W25Q256 /CS reset-state pullup
+100nF X7R,C1 C2 C3 C4 C5 C8 C14 C17,0402,,Generic MLCC,8,8,SMT,Rated >=10V
+1uF X5R,C6 C7 C9 C10,0402,,Generic MLCC,2,4,SMT,C6/C7 are underwater-only
+4.7uF X5R,C11 C12,0603,,Generic MLCC,2,2,SMT,Rated >=10V
+10nF C0G,C13,0402,,Generic MLCC,0,1,SMT,Bridge differential filter
+8.2pF C0G,C15 C16,0402,,Generic MLCC,2,2,SMT,Recalculate after crystal CL/parasitics review

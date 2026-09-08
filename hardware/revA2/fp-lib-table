@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "SmartApoRevA2")(type "KiCad")(uri "${KIPRJMOD}/SmartApoRevA2.pretty")(options "")(descr "Rev.A2 project footprints"))
+)

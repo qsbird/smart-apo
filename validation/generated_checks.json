@@ -1,0 +1,150 @@
+{
+  "revision": "A1-pre-release",
+  "awa_envelope_mm": [
+    32,
+    32,
+    49
+  ],
+  "pcb_envelope_mm": [
+    12,
+    35,
+    1.0
+  ],
+  "underwater_envelope_nominal_mm": [
+    20,
+    20,
+    70
+  ],
+  "underwater_external_displacement_ml": 19.897,
+  "seawater_displaced_mass_g_at_1p025": 20.394,
+  "underwater_target_total_mass_g_for_minus_2p9g": 23.294,
+  "mesh_reports": [
+    {
+      "file": "awa_body_32x49_revA.stl",
+      "watertight": true,
+      "volume_mm3": 4969.02,
+      "bounds_mm": [
+        [
+          -16.0,
+          -16.0,
+          -24.46
+        ],
+        [
+          16.0,
+          16.0,
+          15.0
+        ]
+      ],
+      "faces": 9470
+    },
+    {
+      "file": "awa_cap_revA.stl",
+      "watertight": true,
+      "volume_mm3": 1958.68,
+      "bounds_mm": [
+        [
+          -14.604,
+          -14.6,
+          10.0
+        ],
+        [
+          14.604,
+          14.6,
+          24.5
+        ]
+      ],
+      "faces": 5958
+    },
+    {
+      "file": "awa_electronics_sled_revA.stl",
+      "watertight": true,
+      "volume_mm3": 801.74,
+      "bounds_mm": [
+        [
+          -10.5,
+          -0.5,
+          -19.3
+        ],
+        [
+          10.55,
+          1.9,
+          16.3
+        ]
+      ],
+      "faces": 68
+    },
+    {
+      "file": "underwater_fairing_half_A_revA.stl",
+      "watertight": true,
+      "volume_mm3": 7818.31,
+      "bounds_mm": [
+        [
+          -10.0,
+          -12.0,
+          -34.965
+        ],
+        [
+          10.0,
+          -0.01,
+          34.965
+        ]
+      ],
+      "faces": 3898
+    },
+    {
+      "file": "underwater_fairing_half_B_revA.stl",
+      "watertight": true,
+      "volume_mm3": 7818.31,
+      "bounds_mm": [
+        [
+          -10.0,
+          0.01,
+          -34.965
+        ],
+        [
+          10.0,
+          12.0,
+          34.965
+        ]
+      ],
+      "faces": 3906
+    },
+    {
+      "file": "underwater_ballast_cassette_revA.stl",
+      "watertight": true,
+      "volume_mm3": 293.04,
+      "bounds_mm": [
+        [
+          -4.5,
+          -2.75,
+          -20.0
+        ],
+        [
+          4.5,
+          2.75,
+          -8.0
+        ]
+      ],
+      "faces": 28
+    },
+    {
+      "file": "316L_flexure_preview_NOT_FOR_PRINTING.stl",
+      "watertight": true,
+      "volume_mm3": 94.09,
+      "bounds_mm": [
+        [
+          -4.0,
+          -39.0,
+          0.0
+        ],
+        [
+          4.0,
+          39.0,
+          0.3
+        ]
+      ],
+      "faces": 596
+    }
+  ],
+  "pcb_release_status": "BLOCKED: net-assigned and placed; zero routed tracks; requires official footprint review, routing, ERC and DRC"
+}

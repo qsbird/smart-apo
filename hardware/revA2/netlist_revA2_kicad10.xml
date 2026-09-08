@@ -1,0 +1,1606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/qs/Documents/smart_apo_revA 2/hardware/revA2/smart_apo_common_revA2.kicad_sch</source>
+    <date>2026-09-08T21:58:15</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>smart_apo_common_revA2</title>
+        <company/>
+        <rev/>
+        <date/>
+        <source>smart_apo_common_revA2.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d725f901-c778-4414-b39f-45812be0cf7b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7007950e-9870-42dc-891d-4056cb70f4cb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c94cce94-ecde-4d0c-8702-f81e222cf50c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>771f6e5d-924e-4d24-8ea8-1cd780096632</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>56fed888-473c-4ff2-bccf-88fd4368b5d3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">UNDERWATER</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="UNDERWATER"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da55a538-ac78-4afc-a06d-b51b75ad0c8a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">UNDERWATER</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="UNDERWATER"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9664ed26-9a94-4368-a13d-2044a4796f6c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c1f1a4a7-4767-4b1f-b142-cd413828cd69</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6dbc53a1-91a7-46ef-967a-2ade283321b8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4bf975a8-d2dc-4f63-9ba3-35dd211c06d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>4.7u</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eed5d2b1-f728-46c0-a64f-ea715404da89</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>4.7u</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f58e95c4-065d-415a-a278-399bf8709296</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">UNDERWATER</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="UNDERWATER"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f4c99cf-aa74-423d-9593-39cc3ecf84d5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>73331d3e-ee8f-4a31-8225-5cba8a2203d0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>8.2p</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4aa282e-34d1-46e7-b29a-789c92da912f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>8.2p</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5f300ce6-0fce-4af0-bd4a-44e302ed9d2a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c88b67e6-b685-45fe-bb09-b29c52eb36a6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>RED_HIGH_BRIGHT</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="Population">AWA</field>
+        <field name="Footprint">LED_SMD:LED_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="AWA"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c05e8e33-6ae6-4dd3-bcd3-08b2238112fb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>BATTERY</value>
+      <footprint>SmartApoRevA2:BATTERY_WIRE_PADS</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">SmartApoRevA2:BATTERY_WIRE_PADS</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4be7598e-161c-4ec1-b079-4b6c765f1bd9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>POGO_DEBUG_CHARGE</value>
+      <footprint>SmartApoRevA2:POGO_7x1.27mm</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">SmartApoRevA2:POGO_7x1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="CONN7" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5bd2d38b-532c-40da-be20-369f7b86aa39</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>FULL_BRIDGE_6WIRE</value>
+      <footprint>SmartApoRevA2:PAD_6x1.27mm</footprint>
+      <fields>
+        <field name="Population">UNDERWATER</field>
+        <field name="Footprint">SmartApoRevA2:PAD_6x1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="CONN6" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="UNDERWATER"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4b8c3822-69b2-4d8c-9cc7-fbf88d1004d3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="Population">AWA</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="MOS3" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="AWA"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1eef2f89-1961-41e9-b1c4-842a7b3b5ff8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fce1f623-8a0a-4dde-ae01-ec23f59d2851</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd875f6d-8d75-4869-97da-66e4788ba115</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0690f53-b932-433d-bbc5-7c9b53ea20b4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2f2b41c-e41b-4002-a075-583d36c0dec4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>330k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b1b3311-7083-4fcc-b64c-13cb78a4b568</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>68R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">AWA</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="AWA"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4444c0f-0a9a-4dc3-ab9d-0605bac680ed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">AWA</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="AWA"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a6c9a09-3306-4aa5-a505-3d60c51e8039</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">UNDERWATER</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="UNDERWATER"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd795380-99e2-46d6-9651-4bf8ba51168f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">UNDERWATER</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="UNDERWATER"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9e097df-68a6-4959-9964-f4caa674633f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f52b767-b0df-46d9-a2c1-85ccaf6ac6a6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68448571-21b6-4d50-ab53-8daf5a21f748</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8d72be13-ecf8-5cd0-9ac7-211f848abedd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>SMT_REED_NO</value>
+      <footprint>Button_Switch_SMD:SW_SPST_REED_CT05-XXXX-G1</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_REED_CT05-XXXX-G1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8a296b84-2d58-4abf-9504-c4b41e677ab2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>STM32G031F8P6</value>
+      <footprint>Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="MCU20" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ba2abf8e-62f7-45c5-9a7d-f91a47984769</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="20"/>
+            <pin num="19"/>
+            <pin num="18"/>
+            <pin num="17"/>
+            <pin num="16"/>
+            <pin num="15"/>
+            <pin num="14"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>LSM6DSOTR</value>
+      <footprint>Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="IMU14" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd16bb66-1df8-4bef-9728-2c67f2860130</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="14"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>LPS28DFWTR</value>
+      <footprint>SmartApoRevA2:LPS28DFW_CCLGA-7L</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">SmartApoRevA2:LPS28DFW_CCLGA-7L</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PRESS7" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dcabc38c-b6bc-455a-a467-d77515098462</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>NAU7802SGI</value>
+      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <fields>
+        <field name="Population">UNDERWATER</field>
+        <field name="Footprint">Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="ADC16" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="UNDERWATER"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b4b75956-bca5-4b88-8d73-db259c1d6113</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="16"/>
+            <pin num="15"/>
+            <pin num="14"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>W25Q256JVEIQ</value>
+      <footprint>Package_DFN_QFN:WDFN-8-1EP_8x6mm_P1.27mm_EP6x4.8mm</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Package_DFN_QFN:WDFN-8-1EP_8x6mm_P1.27mm_EP6x4.8mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="FLASH8" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d1a69ae0-dc70-4395-8f9c-89d2e492502a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>MCP73831T-2ACI/OT</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="CHARGER5" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>041c50bf-6a96-41b9-b5cc-65168cd0fd4e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>TPS7A0233PDBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="LDO5" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>67878cc4-ddc0-40b9-b846-3171730590f6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y1">
+      <value>32.768kHz_12.5pF</value>
+      <footprint>Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm</footprint>
+      <fields>
+        <field name="Population">BOTH</field>
+        <field name="Footprint">Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SmartApoRevA2" part="PASSIVE2" description="Smart Apo Rev.A2 custom symbol"/>
+      <property name="Population" value="BOTH"/>
+      <property name="Sheetname" value="smart_apo_common_revA2"/>
+      <property name="Sheetfile" value="smart_apo_common_revA2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f3ff58e-19c2-43fc-9229-fd7b144b7738</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="SmartApoRevA2" part="ADC16">
+      <description>Smart Apo Rev.A2 custom symbol</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADC16</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Smart Apo Rev.A2 custom symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="REFP" type="input"/>
+        <pin num="2" name="VIN1N" type="input"/>
+        <pin num="3" name="VIN1P" type="input"/>
+        <pin num="4" name="VIN2N" type="input"/>
+        <pin num="5" name="VIN2P" type="input"/>
+        <pin num="6" name="VBG" type="output"/>
+        <pin num="7" name="REFN" type="input"/>
+        <pin num="8" name="AVSS" type="power_in"/>
+        <pin num="9" name="DVSS" type="power_in"/>
+        <pin num="10" name="XIN" type="no_connect"/>
+        <pin num="11" name="XOUT" type="no_connect"/>
+        <pin num="12" name="DRDY" type="output"/>
+        <pin num="13" name="SCLK" type="input"/>
+        <pin num="14" name="SDIO" type="bidirectional"/>
+        <pin num="15" name="DVDD" type="power_in"/>
+        <pin num="16" name="AVDD/LDO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="SmartApoRevA2" part="CHARGER5">
+      <description>Smart Apo Rev.A2 custom symbol</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CHARGER5</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Smart Apo Rev.A2 custom symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="STAT" type="tri_state"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="VBAT" type="power_out"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="PROG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="SmartApoRevA2" part="CONN6">
+      <description>Smart Apo Rev.A2 custom symbol</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CONN6</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Smart Apo Rev.A2 custom symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E+" type="passive"/>
+        <pin num="2" name="E-" type="passive"/>
+        <pin num="3" name="S+" type="passive"/>
+        <pin num="4" name="S-" type="passive"/>
+        <pin num="5" name="A+" type="passive"/>
+        <pin num="6" name="A-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SmartApoRevA2" part="CONN7">
+      <description>Smart Apo Rev.A2 custom symbol</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CONN7</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Smart Apo Rev.A2 custom symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_out"/>
+        <pin num="2" name="CHARGE_IN" type="power_out"/>
+        <pin num="3" name="SWDIO" type="passive"/>
+        <pin num="4" name="SWCLK" type="passive"/>
+        <pin num="5" name="UART_TX" type="passive"/>
+        <pin num="6" name="UART_RX" type="passive"/>
+        <pin num="7" name="NRST" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SmartApoRevA2" part="FLASH8">
+      <description>Smart Apo Rev.A2 custom symbol</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">FLASH8</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Smart Apo Rev.A2 custom symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="/CS" type="input"/>
+        <pin num="2" name="DO/IO1" type="output"/>
+        <pin num="3" name="/WP/IO2" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="DI/IO0" type="bidirectional"/>
+        <pin num="6" name="CLK" type="input"/>
+        <pin num="7" name="/HOLD/IO3" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SmartApoRevA2" part="IMU14">
+      <description>Smart Apo Rev.A2 custom symbol</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IMU14</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Smart Apo Rev.A2 custom symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDO/SA0" type="input"/>
+        <pin num="2" name="SDx" type="passive"/>
+        <pin num="3" name="SCx" type="input"/>
+        <pin num="4" name="INT1" type="output"/>
+        <pin num="5" name="VDDIO" type="power_in"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="VDD" type="power_in"/>
+        <pin num="9" name="INT2" type="no_connect"/>
+        <pin num="10" name="OCS_AUX" type="no_connect"/>
+        <pin num="11" name="SDO_AUX" type="passive"/>
+        <pin num="12" name="CS" type="input"/>
+        <pin num="13" name="SCL" type="input"/>
+        <pin num="14" name="SDA" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="SmartApoRevA2" part="LDO5">
+      <description>Smart Apo Rev.A2 custom symbol</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LDO5</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Smart Apo Rev.A2 custom symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="SmartApoRevA2" part="MCU20">
+      <description>Smart Apo Rev.A2 custom symbol</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCU20</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Smart Apo Rev.A2 custom symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PB7/PB8" type="bidirectional"/>
+        <pin num="2" name="PB9/PC14-OSC32_IN" type="input"/>
+        <pin num="3" name="PC15-OSC32_OUT" type="output"/>
+        <pin num="4" name="VDD/VDDA" type="power_in"/>
+        <pin num="5" name="VSS/VSSA" type="power_in"/>
+        <pin num="6" name="PF2-NRST" type="input"/>
+        <pin num="7" name="PA0" type="bidirectional"/>
+        <pin num="8" name="PA1" type="bidirectional"/>
+        <pin num="9" name="PA2" type="bidirectional"/>
+        <pin num="10" name="PA3" type="bidirectional"/>
+        <pin num="11" name="PA4" type="bidirectional"/>
+        <pin num="12" name="PA5" type="bidirectional"/>
+        <pin num="13" name="PA6" type="bidirectional"/>
+        <pin num="14" name="PA7" type="bidirectional"/>
+        <pin num="15" name="PB0/PB1/PB2/PA8" type="bidirectional"/>
+        <pin num="16" name="PA11[PA9]" type="bidirectional"/>
+        <pin num="17" name="PA12[PA10]" type="bidirectional"/>
+        <pin num="18" name="PA13" type="bidirectional"/>
+        <pin num="19" name="PA15/PA14-BOOT0" type="bidirectional"/>
+        <pin num="20" name="PB3/PB4/PB5/PB6" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="SmartApoRevA2" part="MOS3">
+      <description>Smart Apo Rev.A2 custom symbol</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MOS3</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Smart Apo Rev.A2 custom symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SmartApoRevA2" part="PASSIVE2">
+      <description>Smart Apo Rev.A2 custom symbol</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PASSIVE2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Smart Apo Rev.A2 custom symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SmartApoRevA2" part="PRESS7">
+      <description>Smart Apo Rev.A2 custom symbol</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PRESS7</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Smart Apo Rev.A2 custom symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDA" type="bidirectional"/>
+        <pin num="2" name="SA0" type="input"/>
+        <pin num="3" name="SCL" type="input"/>
+        <pin num="4" name="INT_DRDY" type="no_connect"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="VDD" type="power_in"/>
+        <pin num="7" name="PAD2LID" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="SmartApoRevA2">
+      <uri>${KIPRJMOD}/smart_apo_revA2.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3V3" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="VDD/VDDA_4" pintype="power_in"/>
+      <node ref="U2" pin="11" pinfunction="SDO_AUX_11" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="CS_12" pintype="input"/>
+      <node ref="U2" pin="5" pinfunction="VDDIO_5" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="VDD_8" pintype="power_in"/>
+      <node ref="U3" pin="6" pinfunction="VDD_6" pintype="power_in"/>
+      <node ref="U4" pin="15" pinfunction="DVDD_15" pintype="power_in"/>
+      <node ref="U5" pin="3" pinfunction="/WP/IO2_3" pintype="input"/>
+      <node ref="U5" pin="7" pinfunction="/HOLD/IO3_7" pintype="input"/>
+      <node ref="U5" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U7" pin="5" pinfunction="OUT_5" pintype="power_out"/>
+    </net>
+    <net code="2" name="/AIN_N_FILT" class="Default">
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="VIN1N_2" pintype="input"/>
+    </net>
+    <net code="3" name="/AIN_P_FILT" class="Default">
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="VIN1P_3" pintype="input"/>
+    </net>
+    <net code="4" name="/BRIDGE_A+" class="Default">
+      <node ref="J3" pin="5" pinfunction="A+_5" pintype="passive"/>
+      <node ref="R8" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="5" name="/BRIDGE_A-" class="Default">
+      <node ref="J3" pin="6" pinfunction="A-_6" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="6" name="/BRIDGE_E+" class="Default">
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="E+_1" pintype="passive"/>
+      <node ref="U4" pin="16" pinfunction="AVDD/LDO_16" pintype="power_out"/>
+    </net>
+    <net code="7" name="/BRIDGE_S+" class="Default">
+      <node ref="J3" pin="3" pinfunction="S+_3" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="REFP_1" pintype="input"/>
+    </net>
+    <net code="8" name="/BRIDGE_S-" class="Default">
+      <node ref="J3" pin="4" pinfunction="S-_4" pintype="passive"/>
+      <node ref="U4" pin="7" pinfunction="REFN_7" pintype="input"/>
+    </net>
+    <net code="9" name="/CHARGE_IN" class="Default">
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="CHARGE_IN_2" pintype="power_out"/>
+      <node ref="U6" pin="4" pinfunction="VDD_4" pintype="power_in"/>
+    </net>
+    <net code="10" name="/CHG_PROG" class="Default">
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="5" pinfunction="PROG_5" pintype="input"/>
+    </net>
+    <net code="11" name="/FLASH_CS" class="Default">
+      <node ref="R12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="PA4_11" pintype="bidirectional"/>
+      <node ref="U5" pin="1" pinfunction="/CS_1" pintype="input"/>
+    </net>
+    <net code="12" name="/GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="GND_1" pintype="power_out"/>
+      <node ref="J3" pin="2" pinfunction="E-_2" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VSS/VSSA_5" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="SDO/SA0_1" pintype="input"/>
+      <node ref="U2" pin="2" pinfunction="SDx_2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="SCx_3" pintype="input"/>
+      <node ref="U2" pin="6" pinfunction="GND_6" pintype="power_in"/>
+      <node ref="U2" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="SA0_2" pintype="input"/>
+      <node ref="U3" pin="5" pinfunction="GND_5" pintype="power_in"/>
+      <node ref="U3" pin="7" pinfunction="PAD2LID_7" pintype="passive"/>
+      <node ref="U4" pin="8" pinfunction="AVSS_8" pintype="power_in"/>
+      <node ref="U4" pin="9" pinfunction="DVSS_9" pintype="power_in"/>
+      <node ref="U5" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="VSS_2" pintype="power_in"/>
+      <node ref="U7" pin="2" pinfunction="GND_2" pintype="power_in"/>
+    </net>
+    <net code="13" name="/I2C_SCL" class="Default">
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="PB3/PB4/PB5/PB6_20" pintype="bidirectional"/>
+      <node ref="U2" pin="13" pinfunction="SCL_13" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="SCL_3" pintype="input"/>
+      <node ref="U4" pin="13" pinfunction="SCLK_13" pintype="input"/>
+    </net>
+    <net code="14" name="/I2C_SDA" class="Default">
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="PB7/PB8_1" pintype="bidirectional"/>
+      <node ref="U2" pin="14" pinfunction="SDA_14" pintype="bidirectional"/>
+      <node ref="U3" pin="1" pinfunction="SDA_1" pintype="bidirectional"/>
+      <node ref="U4" pin="14" pinfunction="SDIO_14" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/IMU_INT" class="Default">
+      <node ref="U1" pin="7" pinfunction="PA0_7" pintype="bidirectional"/>
+      <node ref="U2" pin="4" pinfunction="INT1_4" pintype="output"/>
+    </net>
+    <net code="16" name="/LED_A" class="Default">
+      <node ref="D1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="17" name="/LED_GATE" class="Default">
+      <node ref="Q1" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="PB0/PB1/PB2/PA8_15" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/LED_K" class="Default">
+      <node ref="D1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
+    </net>
+    <net code="19" name="/LSE_IN" class="Default">
+      <node ref="C15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="PB9/PC14-OSC32_IN_2" pintype="input"/>
+      <node ref="Y1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="20" name="/LSE_OUT" class="Default">
+      <node ref="C16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="PC15-OSC32_OUT_3" pintype="output"/>
+      <node ref="Y1" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="21" name="/NRST" class="Default">
+      <node ref="C17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J2" pin="7" pinfunction="NRST_7" pintype="passive"/>
+      <node ref="R11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="PF2-NRST_6" pintype="input"/>
+    </net>
+    <net code="22" name="/REED_WAKE" class="Default">
+      <node ref="R10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="PA11[PA9]_16" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="/SPI_MISO" class="Default">
+      <node ref="U1" pin="13" pinfunction="PA6_13" pintype="bidirectional"/>
+      <node ref="U5" pin="2" pinfunction="DO/IO1_2" pintype="output"/>
+    </net>
+    <net code="24" name="/SPI_MOSI" class="Default">
+      <node ref="U1" pin="14" pinfunction="PA7_14" pintype="bidirectional"/>
+      <node ref="U5" pin="5" pinfunction="DI/IO0_5" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/SPI_SCK" class="Default">
+      <node ref="U1" pin="12" pinfunction="PA5_12" pintype="bidirectional"/>
+      <node ref="U5" pin="6" pinfunction="CLK_6" pintype="input"/>
+    </net>
+    <net code="26" name="/STRAIN_DRDY" class="Default">
+      <node ref="U1" pin="17" pinfunction="PA12[PA10]_17" pintype="bidirectional"/>
+      <node ref="U4" pin="12" pinfunction="DRDY_12" pintype="output"/>
+    </net>
+    <net code="27" name="/SWCLK" class="Default">
+      <node ref="J2" pin="4" pinfunction="SWCLK_4" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="PA15/PA14-BOOT0_19" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="/SWDIO" class="Default">
+      <node ref="J2" pin="3" pinfunction="SWDIO_3" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="PA13_18" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="/UART_RX" class="Default">
+      <node ref="J2" pin="6" pinfunction="UART_RX_6" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="PA3_10" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="/UART_TX" class="Default">
+      <node ref="J2" pin="5" pinfunction="UART_TX_5" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="PA2_9" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="/VBAT" class="Default">
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="VBAT_3" pintype="power_out"/>
+      <node ref="U7" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U7" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="32" name="/VBAT_SENSE" class="Default">
+      <node ref="C14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="PA1_8" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="/VBG" class="Default">
+      <node ref="C7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="VBG_6" pintype="output"/>
+    </net>
+    <net code="34" name="unconnected-(U2-INT2-Pad9)" class="Default">
+      <node ref="U2" pin="9" pinfunction="INT2_9" pintype="no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U2-OCS_AUX-Pad10)" class="Default">
+      <node ref="U2" pin="10" pinfunction="OCS_AUX_10" pintype="no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U3-INT_DRDY-Pad4)" class="Default">
+      <node ref="U3" pin="4" pinfunction="INT_DRDY_4" pintype="no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U4-VIN2N-Pad4)" class="Default">
+      <node ref="U4" pin="4" pinfunction="VIN2N_4" pintype="input+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U4-VIN2P-Pad5)" class="Default">
+      <node ref="U4" pin="5" pinfunction="VIN2P_5" pintype="input+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U4-XIN-Pad10)" class="Default">
+      <node ref="U4" pin="10" pinfunction="XIN_10" pintype="no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U4-XOUT-Pad11)" class="Default">
+      <node ref="U4" pin="11" pinfunction="XOUT_11" pintype="no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U6-STAT-Pad1)" class="Default">
+      <node ref="U6" pin="1" pinfunction="STAT_1" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(U7-NC-Pad4)" class="Default">
+      <node ref="U7" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,10 @@
+{
+  "revision": "A2",
+  "source_revision": "A1_read_only",
+  "components": 43,
+  "typed_symbol_pins": 93,
+  "project_symbol_library": "/Users/qs/Documents/smart_apo_revA 2/hardware/revA2/smart_apo_revA2.kicad_sym",
+  "official_erc": "PENDING_KICAD10_RERUN_AFTER_GENERATION",
+  "pcb_status": "PENDING_REBUILD_FROM_REVIEWED_SCHEMATIC",
+  "circuit_changes": "CORRECTED_STM32_TSSOP20_PINOUT_AND_ADDED_FLASH_CS_PULLUP"
+}

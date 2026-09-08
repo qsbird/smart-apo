@@ -1,0 +1,44 @@
+{
+  "format": "smart-apo-autotune-v1",
+  "time_map": {
+    "scale": 1.0000215304176312,
+    "offset_s": -0.204860145940412,
+    "rms_ms": 0.27010676496022085,
+    "marker_count": 6
+  },
+  "sample_rate_hz": 100.0,
+  "parameters": {
+    "weights": {
+      "acc": 1,
+      "gyro": 0.5,
+      "pressure_rate": 0.25
+    },
+    "threshold": 4.5,
+    "minimum_ms": 80,
+    "hold_ms": 140
+  },
+  "validation": {
+    "event_f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_events_per_hour": 0.0,
+    "truth_events": 2,
+    "detected_events": 2
+  },
+  "test": {
+    "event_f1": 0.8,
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "false_events_per_hour": 150.0,
+    "truth_events": 2,
+    "detected_events": 3
+  },
+  "teacher": {
+    "method": "NAU7802 tension high-pass robust z-score",
+    "threshold_mad": 6.0
+  },
+  "promotion_gate": {
+    "requires_new_unseen_trip": true,
+    "automatic_flash": false
+  }
+}

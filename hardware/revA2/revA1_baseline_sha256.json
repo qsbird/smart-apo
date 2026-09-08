@@ -1,0 +1,10 @@
+{
+  "hardware/ASSEMBLY_VARIANTS_revA1.csv": "568fc1e2270adb26acbe871aa81418a2acdc853c0d5954229c8ab86711c68458",
+  "hardware/BOM_revA1_JLCPCB.csv": "d8f57122277fc7667f6b33cf2a52284ce92937c1d75b4d8daa9883398d6397a2",
+  "hardware/CPL_revA1.csv": "0de586d602961e6032b21827d3f2157c5abf284b8f631be3fa195a6db8d59169",
+  "hardware/pin_net_review_revA1.csv": "65522b39ef28bddf0b487e3889f7fdd6ea693f5fdaaf3f9602b511c63955a82b",
+  "hardware/smart_apo_common_revA1.kicad_sch": "e549075fbd1cd2fdf2ea21f51c577dd364dd2d523af323b9b14afa8802cf6293",
+  "hardware/smart_apo_common_revA1_NETS_PLACED.kicad_pcb": "004c5f57ac70a1630a31cb84cbcee187813385a0e9954a69f232ab1839fc1720",
+  "tools/validate_revA1.py": "9a227180b887bbab67cee2d84cf17bdafd54963314214fd68be2fc7df557e4c9",
+  "validation/revA1_validation_report.json": "a7c5ace55a5e6171929ff84d61dfb68f58fdf46fb1dd4a1fe74302e0011c0f5f"
+}
