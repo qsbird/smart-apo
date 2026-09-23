@@ -376,6 +376,20 @@ def add_flash_cs_pullup(source: str) -> str:
     return source[:label_insert] + labels + source[label_insert:]
 
 
+DIVIDER_VALUES = {"R4": "180k", "R5": "60.4k"}
+
+
+def update_divider_values(source: str) -> str:
+    """Update only instance value fields; never rebuild the current board."""
+    for reference, value in DIVIDER_VALUES.items():
+        pattern = (r'(\(property "Reference" "' + reference +
+                   r'"(?:(?!\(property "Reference").)*?\(property "Value" ")[^"]+(")')
+        source, count = re.subn(pattern, lambda match: match[1] + value + match[2], source, flags=re.S)
+        if count != 1:
+            raise ValueError(f"{reference}: expected exactly one instance value")
+    return source
+
+
 def build() -> dict:
     REV.mkdir(parents=True, exist_ok=True)
     (REV / "SmartApoRevA2.pretty").mkdir(exist_ok=True)
@@ -404,11 +418,15 @@ def build() -> dict:
     source = source.replace("Rev.A1", "Rev.A2").replace("revA1", "revA2")
     source = source.replace(
         "Package_LGA:LGA-14_2.5x3mm_P0.5mm",
+        "SmartApoRevA2:LGA-14_3x2.5mm_P0.5mm_LSM6DSO",
+    )
+    source = source.replace(
         "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y",
+        "SmartApoRevA2:LGA-14_3x2.5mm_P0.5mm_LSM6DSO",
     )
     source = source.replace(
         "Package_DFN_QFN:WSON-8-1EP_6x8mm_P1.27mm",
-        "Package_DFN_QFN:WDFN-8-1EP_8x6mm_P1.27mm_EP6x4.8mm",
+        "SmartApoRevA2:WSON-8_W25Q256JV_8x6mm_AN0000009",
     )
     source = source.replace(
         "SmartApo:CCLGA-7_LPS28DFW",
@@ -422,8 +440,9 @@ def build() -> dict:
     source = source.replace("SmartApo:PAD_6x1.27mm", "SmartApoRevA2:PAD_6x1.27mm")
     source = source.replace(
         "Button_Switch_SMD:SW_SPST_MK16",
-        "Button_Switch_SMD:SW_SPST_REED_CT05-XXXX-G1",
+        "SmartApoRevA2:REED_CT05_COMPACT",
     )
+    source = update_divider_values(source)
     OUT.write_text(source)
 
     # Build the project library from the exact embedded definitions so KiCad's
@@ -465,6 +484,14 @@ def build() -> dict:
     with bom_path.open(newline="") as stream:
         bom_rows = list(csv.DictReader(stream))
         bom_fields = list(bom_rows[0])
+    for row in bom_rows:
+        if row["Designator"] in DIVIDER_VALUES:
+            row["Comment"] = DIVIDER_VALUES[row["Designator"]] + " 1%"
+        if row["Designator"] == "U5":
+            row["Footprint"] = "WSON-8_8x6mm_P1.27"
+            row["Notes"] = "Winbond AN0000009 p21 PCB land; C5334276 catalog MPN matches; incoming lot and carrier remain unverified"
+        if "C14" in row["Designator"].split():
+            row["Notes"] += "; C14 tolerance <=20% (startup RC guard)"
     insert_at = next(index for index, row in enumerate(bom_rows) if row["Designator"] == "R11") + 1
     bom_rows.insert(insert_at, {
         "Comment": "10k 1%", "Designator": "R12", "Footprint": "0402", "LCSC Part #": "",

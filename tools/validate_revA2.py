@@ -49,8 +49,9 @@ def main() -> None:
     ]
     erc_errors = [item for item in erc_violations if item.get("severity") == "error"]
     erc_warnings = [item for item in erc_violations if item.get("severity") == "warning"]
-    erc_zero_violations = not erc_errors and not erc_warnings
+    erc_zero_violations = erc is not None and not erc_errors and not erc_warnings
     lps_footprint = REV / "SmartApoRevA2.pretty" / "LPS28DFW_CCLGA-7L.kicad_mod"
+    imu_footprint = REV / "SmartApoRevA2.pretty" / "LGA-14_3x2.5mm_P0.5mm_LSM6DSO.kicad_mod"
     netlist_path = REV / "netlist_revA2_kicad10.xml"
     netlist = ET.parse(netlist_path).getroot() if netlist_path.exists() else None
     netlist_components = netlist.findall("./components/comp") if netlist is not None else []
@@ -69,6 +70,20 @@ def main() -> None:
         17: "STRAIN_DRDY", 18: "SWDIO", 19: "SWCLK", 20: "I2C_SCL",
     }
     lps_footprint_text = lps_footprint.read_text() if lps_footprint.exists() else ""
+    imu_footprint_text = imu_footprint.read_text() if imu_footprint.exists() else ""
+    normalized_lps = " ".join(lps_footprint_text.split())
+    normalized_imu = " ".join(imu_footprint_text.split())
+    expected_imu_geometry = (
+        '(pad "1" smd roundrect (at -1.1625 -0.75) (size 0.625 0.35)',
+        '(pad "4" smd roundrect (at -1.1625 0.75) (size 0.625 0.35)',
+        '(pad "8" smd roundrect (at 1.1625 0.75) (size 0.625 0.35)',
+        '(pad "14" smd roundrect (at -0.5 -0.9125) (size 0.35 0.625)',
+        '(keepout (tracks not_allowed) (vias not_allowed) (pads allowed) (copperpour not_allowed)',
+        '(name "U2_FULL_BODY_NO_VIAS_OR_POUR")',
+        '(name "U2_TRACK_GUARD_WITH_0p20_RADIAL_ESCAPES")',
+        '(keepout (tracks allowed) (vias not_allowed) (pads allowed) (copperpour not_allowed)',
+        '(xy -1.5 -1.25)', '(xy 1.5 1.25)',
+    )
     expected_lps_geometry = (
         '(pad "1" smd rect (at -1.125 0) (size 0.35 1.4)',
         '(pad "2" smd rect (at -0.575 1.125) (size 0.9 0.35)',
@@ -84,6 +99,23 @@ def main() -> None:
         actual = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
         if actual != expected:
             modified.append(relative)
+
+    pcb_path = REV / "smart_apo_common_revA2.kicad_pcb"
+    drc_path = REV / "drc_revA2_kicad10.json"
+    drc = json.loads(drc_path.read_text()) if drc_path.exists() else None
+    drc_violations = (drc or {}).get("violations") or []
+    drc_errors = [item for item in drc_violations if item.get("severity") == "error"]
+    drc_warnings = [item for item in drc_violations if item.get("severity") == "warning"]
+    drc_unconnected = (drc or {}).get("unconnected_items") or []
+    drc_parity = (drc or {}).get("schematic_parity") or []
+    if not pcb_path.exists():
+        official_drc = "BLOCKED_NO_PRODUCTION_CANDIDATE_REVA2_PCB"
+    elif drc is None:
+        official_drc = "BLOCKED_DRC_NOT_RUN"
+    elif not drc_errors and not drc_unconnected and not drc_parity:
+        official_drc = "PASS_ZERO_ERRORS"
+    else:
+        official_drc = "FAIL_OFFICIAL_DRC"
 
     checks = {
         "revA1_hashes_unchanged": not modified,
@@ -113,7 +145,12 @@ def main() -> None:
         "official_erc_zero_violations": erc_zero_violations,
         "official_erc": "PASS_ZERO_VIOLATIONS" if erc_zero_violations else "FAIL_OR_NOT_RUN",
         "lps28dfw_footprint_present": lps_footprint.exists(),
-        "lps28dfw_official_geometry_locked": all(token in lps_footprint_text for token in expected_lps_geometry),
+        "lps28dfw_official_geometry_locked": all(token in normalized_lps for token in expected_lps_geometry),
+        "lsm6dso_footprint_present": imu_footprint.exists(),
+        "lsm6dso_escape_rule_status": "ENGINEERING_INTERPRETATION_WITH_OFFICIAL_DRC_POSITIVE_AND_NEGATIVE_TESTS",
+        "lsm6dso_evaluation_gerber_check": "BLOCKED_SOURCE_DOWNLOAD",
+        "lsm6dso_geometry_locked": all(token in normalized_imu for token in expected_imu_geometry),
+        "schematic_uses_lsm6dso_project_footprint": "SmartApoRevA2:LGA-14_3x2.5mm_P0.5mm_LSM6DSO" in schematic,
         "lps28dfw_official_gerber_sha256": "3ada96e8f5379a3faae7fded4939724d4bf06484e59954bf688c2410324ce10f",
         "official_netlist_component_count": len(netlist_components),
         "official_netlist_connected_net_count": len(netlist_nets) - len(unconnected_nets),
@@ -125,7 +162,14 @@ def main() -> None:
             node_nets.get(("R12", 1)) == "3V3" and node_nets.get(("R12", 2)) == "FLASH_CS"
         ),
         "legacy_root_revA2_pcb_present": (ROOT / "hardware" / "smart_apo_common_revA2_NETS_PLACED.kicad_pcb").exists(),
-        "official_drc": "BLOCKED_NO_PRODUCTION_CANDIDATE_REVA2_PCB",
+        "production_candidate_pcb_present": pcb_path.exists(),
+        "official_drc_kicad_version": (drc or {}).get("kicad_version"),
+        "official_drc_error_count": len(drc_errors),
+        "official_drc_warning_count": len(drc_warnings),
+        "official_drc_unconnected_count": len(drc_unconnected),
+        "official_drc_schematic_parity_count": len(drc_parity),
+        "official_drc_ignored_checks": (drc or {}).get("ignored_checks", []),
+        "official_drc": official_drc,
         "fabrication_release": "NOT_FAB_RELEASED",
     }
     checks["offline_result"] = "PASS_WITH_PCB_AND_PHYSICAL_TEST_GATES" if all(

@@ -20,6 +20,9 @@ from dataclasses import dataclass
 from pathlib import Path
 
 try:
+    import wx
+
+    _wx_app = wx.App(False)
     import pcbnew
 except ImportError as exc:  # pragma: no cover - useful diagnostic outside KiCad Python
     raise SystemExit(
@@ -50,49 +53,49 @@ class Placement:
 # together, and charging/battery interfaces at the bottom.  Routing remains a
 # later reviewed operation.
 PLACEMENT: dict[str, Placement] = {
-    "U3": Placement(6.0, 2.0),
-    "C4": Placement(9.4, 2.0, 90),
-    "U2": Placement(2.6, 5.3),
-    "C2": Placement(1.0, 7.2, 90),
-    "C3": Placement(3.0, 7.2, 90),
-    "U5": Placement(6.2, 5.8, 0, True),
-    "C8": Placement(10.5, 7.2, 90, True),
-    "R12": Placement(10.5, 4.8, 90),
-    "R1": Placement(4.4, 8.1),
-    "R2": Placement(6.8, 8.1),
-    "U1": Placement(6.0, 12.4),
-    "C1": Placement(10.5, 12.0, 90),
-    "C14": Placement(10.5, 14.0, 90),
-    "C17": Placement(10.5, 10.0, 90),
-    "R11": Placement(10.5, 8.5, 90),
-    "R4": Placement(10.5, 15.7, 90),
-    "R5": Placement(10.5, 17.1, 90),
-    "R10": Placement(10.5, 19.0, 90),
-    "J2": Placement(1.1, 13.2, 90, True),
-    "Y1": Placement(6.0, 17.0, 0, True),
-    "C15": Placement(4.0, 17.0, 90, True),
-    "C16": Placement(8.0, 17.0, 90, True),
-    "SW1": Placement(9.6, 18.2, 90, True),
-    "U4": Placement(6.0, 22.3),
-    "C5": Placement(10.5, 21.1, 90),
-    "C6": Placement(10.5, 22.5, 90),
-    "C7": Placement(10.5, 23.9, 90),
-    "C13": Placement(1.0, 21.0, 90),
-    "R8": Placement(1.0, 22.8, 90),
-    "R9": Placement(1.0, 24.6, 90),
-    "U6": Placement(3.0, 28.9),
-    "U7": Placement(8.8, 28.9, 180),
-    "C11": Placement(0.9, 27.0, 90),
-    "C12": Placement(0.9, 28.7, 90),
-    "R3": Placement(5.5, 29.7, 90),
-    "C9": Placement(7.0, 31.0),
-    "C10": Placement(10.4, 31.0, 90),
-    "J1": Placement(6.2, 32.3, 0, True),
-    "Q1": Placement(2.5, 30.9, 0, True),
-    "D1": Placement(1.2, 33.4, 90),
-    "R6": Placement(3.3, 33.5),
-    "R7": Placement(2.2, 28.1, 90, True),
-    "J3": Placement(7.3, 34.0),
+    "U3": Placement(6.0, 2.4),
+    "C4": Placement(10.4, 2.2, 90),
+    "U2": Placement(2.3, 6.6),
+    "C2": Placement(1.05, 9.5, 90),
+    "C3": Placement(4.8, 8.8, 90),
+    "U5": Placement(6.2, 6.2, 0, True),
+    "C8": Placement(1.15, 10.0, 90, True),
+    "R12": Placement(10.55, 5.0, 90),
+    "R1": Placement(1.15, 11.3),
+    "R2": Placement(8.5, 8.4),
+    "U1": Placement(6.0, 13.2),
+    "C1": Placement(10.55, 12.4, 90),
+    "C14": Placement(10.55, 14.4, 90),
+    "C17": Placement(10.55, 10.4, 90),
+    "R11": Placement(10.55, 8.4, 90),
+    "R4": Placement(10.55, 16.4, 90),
+    "R5": Placement(10.55, 18.4, 90),
+    "R10": Placement(10.55, 20.4, 90),
+    "J2": Placement(1.15, 13.6, 90, True),
+    "Y1": Placement(6.0, 17.6, 0, True),
+    "C15": Placement(3.8, 17.6, 90, True),
+    "C16": Placement(8.2, 17.6, 90, True),
+    "SW1": Placement(6.0, 20.4, 0, True),
+    "U4": Placement(5.4, 23.6),
+    "C5": Placement(10.55, 22.6, 90),
+    "C6": Placement(10.55, 24.6, 90),
+    "C7": Placement(10.55, 26.6, 90),
+    "C13": Placement(1.05, 21.6, 90),
+    "R8": Placement(1.05, 23.6, 90),
+    "R9": Placement(1.05, 25.6, 90),
+    "U6": Placement(3.2, 31.2),
+    "U7": Placement(10.0, 33.4, 180),
+    "C11": Placement(0.95, 31.0, 90),
+    "C12": Placement(0.95, 32.4, 90),
+    "R3": Placement(4.8, 31.2, 90),
+    "C9": Placement(6.6, 31.8),
+    "C10": Placement(10.55, 28.4, 90),
+    "J1": Placement(6.2, 33.4, 0, True),
+    "Q1": Placement(1.9, 29.6, 0, True),
+    "D1": Placement(2.0, 33.4, 90),
+    "R6": Placement(4.0, 33.4),
+    "R7": Placement(2.2, 28.8, 90, True),
+    "J3": Placement(7.4, 32.6),
 }
 
 
@@ -154,15 +157,16 @@ def configure_board(board: pcbnew.BOARD) -> None:
     settings.SetBoardThickness(mm(1.0))
     settings.m_MinClearance = mm(0.15)
     settings.m_TrackMinWidth = mm(0.15)
-    settings.m_ViasMinSize = mm(0.45)
-    settings.m_MicroViasMinSize = mm(0.45)
-    settings.m_MicroViasMinDrill = mm(0.20)
+    settings.m_ViasMinSize = mm(0.60)
+    settings.m_ViasMinDrill = mm(0.30)
+    settings.m_MicroViasMinSize = mm(0.60)
+    settings.m_MicroViasMinDrill = mm(0.30)
     settings.m_CopperEdgeClearance = mm(0.25)
     default = settings.m_NetSettings.GetDefaultNetclass()
     default.SetClearance(mm(0.15))
     default.SetTrackWidth(mm(0.15))
-    default.SetViaDiameter(mm(0.45))
-    default.SetViaDrill(mm(0.20))
+    default.SetViaDiameter(mm(0.60))
+    default.SetViaDrill(mm(0.30))
     properties = pcbnew.MAP_STRING_STRING()
     for key, value in {
         "REVISION": "Rev.A2",
@@ -234,9 +238,10 @@ def add_components(
         place = PLACEMENT[ref]
         footprint.SetPosition(point(place.x, place.y))
         footprint.SetOrientationDegrees(place.angle)
-        if place.back:
-            footprint.Flip(footprint.GetPosition(), False)
         board.Add(footprint)
+        if place.back:
+            # KiCad 10 requires the footprint to be on the board before Flip().
+            footprint.Flip(footprint.GetPosition(), pcbnew.FLIP_DIRECTION_LEFT_RIGHT)
 
         numbered = {pad.GetNumber() for pad in footprint.Pads() if pad.GetNumber()}
         missing = expected_pads.get(ref, set()) - numbered

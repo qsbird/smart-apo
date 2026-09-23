@@ -1,0 +1,62 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-23T23:43:30",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "smart_apo_common_revA2.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "封装 J3",
+                    "pos": {
+                        "x": 7.4,
+                        "y": 32.6
+                    },
+                    "uuid": "1d793d23-02b2-4787-87a7-7f400bfd4a0a"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "封装 J2",
+                    "pos": {
+                        "x": 1.15,
+                        "y": 13.6
+                    },
+                    "uuid": "b9adba86-608e-4736-8e30-dd5b8549b586"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "封装 J1",
+                    "pos": {
+                        "x": 6.2,
+                        "y": 33.2
+                    },
+                    "uuid": "cb3badfb-887d-45df-8139-0a8475710b95"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        }
+    ]
+}

@@ -1,3 +1,9 @@
+> 最新U3/C13检查点（2026-09-23）：C13可见位号修复消除10项警告；U3及配套库按最大本体重建禁布，最小理想via余量.10mm/顶部.125mm。官方ERC0/0、DRC普通错误0/未连接0/95警告、一致性0，无忽略/排除，NOT_FAB_RELEASED。见 `hardware/revA2/U3_MARGIN_AND_C13_CHECKPOINT_20260923_CN.md`。以下较小余量和警告数均为历史。
+
+> 最大外形补充（2026-09-23）：已读取并渲染核对DS13317 Rev1第42页Figure19，L/W=2.8±0.15mm，因此最大本体2.95×2.95mm、最大高2.1mm。原2.8mm禁布矩形是名义投影，不能代替最大本体/贴装公差审查。当前顶部两via的最大本体理想净距仅0.025mm，未做贴装公差验证。源PDF、散列和页面证据在validation/revA2_u3_max_body；正式板本轮未改。
+
+> 后续证据更新：原厂Gerber已从Downloads找回且哈希/CRC核验通过，中央接地与外围逃线已直接解析。此前“未取得原包”结论仅为历史。详见 U3_ESCAPE_CHECKPOINT_20260923_CN.md 和 validation/revA2_u3_recovered/RECOVERED_GERBER_REVIEW_CN.md。pin4为INT_DRDY，本项目不使用并标记no-connect。
+
 # LPS28DFW Rev.A2 封装依据
 
 核对日期：2026-09-08。

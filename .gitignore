@@ -4,3 +4,11 @@ __pycache__/
 .pydeps/
 .omx/
 tmp/
+*.lck
+*.kicad_prl
+*.o
+*.d
+firmware/mcu/build-arm/
+firmware/mcu/validation/
+firmware/host/checkpoints/
+validation/revA2_*/

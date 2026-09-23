@@ -1,4 +1,6 @@
-# 智能阿波 + 智能水中 Rev.A1 工程验证包
+# 智能阿波 + 智能水中工程验证包
+
+本页保留 Rev.A1 的原始说明。当前 Rev.A2 工程位于 `hardware/revA2/`，最新交付边界见 `PAUSE_CHECKPOINT_20260924_CN.md` 与 `hardware/revA2/DELIVERY_GATES_CURRENT_CN.md`。Rev.A2 尚为 `NOT_FAB_RELEASED`；仓库不包含本机保存的逐轮试验快照和编译日志，正式检查结果与项目文件保留在 `hardware/revA2/`。
 
 ## 已锁定的首版默认值
 

@@ -4,7 +4,10 @@
   "components": 43,
   "typed_symbol_pins": 93,
   "project_symbol_library": "/Users/qs/Documents/smart_apo_revA 2/hardware/revA2/smart_apo_revA2.kicad_sym",
-  "official_erc": "PENDING_KICAD10_RERUN_AFTER_GENERATION",
-  "pcb_status": "PENDING_REBUILD_FROM_REVIEWED_SCHEMATIC",
-  "circuit_changes": "CORRECTED_STM32_TSSOP20_PINOUT_AND_ADDED_FLASH_CS_PULLUP"
+  "official_erc": "PASS_ZERO_VIOLATIONS_KICAD_10_0_6",
+  "pcb_status": "ROUTING_CANDIDATE_OFFICIAL_DRC_FAILED",
+  "pcb_file": "hardware/revA2/smart_apo_common_revA2.kicad_pcb",
+  "official_drc": "FAIL_380_ERRORS_172_WARNINGS_73_UNCONNECTED",
+  "drc_note": "drill_out_of_range cleared by 0.30mm drill; annular_width appeared at 0.45/0.30; keepout and shorts remain",
+  "circuit_changes": "CORRECTED_STM32_TSSOP20_PINOUT_ADDED_FLASH_CS_PULLUP_COMPACT_REED"
 }

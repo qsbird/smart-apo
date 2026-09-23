@@ -1,0 +1,542 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-23T15:06:40",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "smart_apo_common_revA2.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U2 的焊盘 14 [/I2C_SDA]",
+                    "pos": {
+                        "x": 1.8,
+                        "y": 5.0375
+                    },
+                    "uuid": "2177d1e9-a9b2-4016-bf0d-abbf5b262e09"
+                },
+                {
+                    "description": "过孔 [/I2C_SDA] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 3.3,
+                        "y": 9.6
+                    },
+                    "uuid": "86fba709-cd02-4ba1-8cba-d12380fdceae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [/I2C_SDA] (B.Cu), 长度: 0.8001 mm",
+                    "pos": {
+                        "x": 3.29,
+                        "y": 10.4
+                    },
+                    "uuid": "8667532e-74f2-44b3-8f4f-56b0f124cec9"
+                },
+                {
+                    "description": "F.Cu 上 U4 的焊盘 14 [/I2C_SDA]",
+                    "pos": {
+                        "x": 4.095,
+                        "y": 21.925
+                    },
+                    "uuid": "5d08d074-1704-4486-8214-7d19cd67db39"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U3 的焊盘 1 [/I2C_SDA]",
+                    "pos": {
+                        "x": 4.875,
+                        "y": 2.4
+                    },
+                    "uuid": "c4c6218a-a624-4c26-acab-a8b1258ff7b2"
+                },
+                {
+                    "description": "F.Cu 上 U2 的焊盘 14 [/I2C_SDA]",
+                    "pos": {
+                        "x": 1.8,
+                        "y": 5.0375
+                    },
+                    "uuid": "2177d1e9-a9b2-4016-bf0d-abbf5b262e09"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [/3V3] (F.Cu), 长度: 0.0707 mm",
+                    "pos": {
+                        "x": 3.95,
+                        "y": 4.45
+                    },
+                    "uuid": "64f2e09d-1a1c-422b-9b80-527caae61f70"
+                },
+                {
+                    "description": "F.Cu 上 U3 的焊盘 6 [/3V3]",
+                    "pos": {
+                        "x": 5.425,
+                        "y": 1.275
+                    },
+                    "uuid": "fb6e30e1-e8e0-4b12-85a1-94d1841a8686"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U3 的焊盘 2 [/GND]",
+                    "pos": {
+                        "x": 5.425,
+                        "y": 3.525
+                    },
+                    "uuid": "7121c069-631b-447c-913d-f5ab1c9141bc"
+                },
+                {
+                    "description": "F.Cu 上 U3 的焊盘 7 [/GND]",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 2.4
+                    },
+                    "uuid": "ad36381d-7794-4f8d-ac15-7f4f229f65d0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U3 的焊盘 2 [/GND]",
+                    "pos": {
+                        "x": 5.425,
+                        "y": 3.525
+                    },
+                    "uuid": "7121c069-631b-447c-913d-f5ab1c9141bc"
+                },
+                {
+                    "description": "填充区[/GND]在 F.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 2.282842,
+                        "y": 0.4
+                    },
+                    "uuid": "f47aab35-8949-4bdc-9125-3ce6583ab13c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U3 的焊盘 7 [/GND]",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 2.4
+                    },
+                    "uuid": "ad36381d-7794-4f8d-ac15-7f4f229f65d0"
+                },
+                {
+                    "description": "F.Cu 上 U3 的焊盘 5 [/GND]",
+                    "pos": {
+                        "x": 6.575,
+                        "y": 1.275
+                    },
+                    "uuid": "09c4b7c7-ffc9-4bf8-bca9-bb257aa9930a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "B.Cu 上 J2 的焊盘 7 [/NRST]",
+                    "pos": {
+                        "x": 1.15,
+                        "y": 9.79
+                    },
+                    "uuid": "f044b073-c602-42aa-bb69-b85b57695ade"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 6 [/NRST]",
+                    "pos": {
+                        "x": 3.1375,
+                        "y": 13.525
+                    },
+                    "uuid": "20641e4b-1b49-4f20-83c5-9a36da378141"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 6 [/NRST]",
+                    "pos": {
+                        "x": 3.1375,
+                        "y": 13.525
+                    },
+                    "uuid": "20641e4b-1b49-4f20-83c5-9a36da378141"
+                },
+                {
+                    "description": "F.Cu 上 C17 的焊盘 1 [/NRST]",
+                    "pos": {
+                        "x": 10.55,
+                        "y": 10.88
+                    },
+                    "uuid": "1534801b-8431-4a51-9aab-133e2e980787"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 C17 的焊盘 1 [/NRST]",
+                    "pos": {
+                        "x": 10.55,
+                        "y": 10.88
+                    },
+                    "uuid": "1534801b-8431-4a51-9aab-133e2e980787"
+                },
+                {
+                    "description": "F.Cu 上 R11 的焊盘 2 [/NRST]",
+                    "pos": {
+                        "x": 10.55,
+                        "y": 7.89
+                    },
+                    "uuid": "87b4f447-e1e6-4dc5-902e-6bb646f383ed"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U2 的焊盘 4 [/IMU_INT]",
+                    "pos": {
+                        "x": 1.1375,
+                        "y": 6.7
+                    },
+                    "uuid": "80d2bce1-de60-4c6a-92c7-9b2227dfa2d3"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 7 [/IMU_INT]",
+                    "pos": {
+                        "x": 3.1375,
+                        "y": 14.175
+                    },
+                    "uuid": "a4fc61f3-7e65-4bc5-9d3c-5357ccb584cb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [/VBAT_SENSE] (F.Cu), 长度: 1.0100 mm",
+                    "pos": {
+                        "x": 10.55,
+                        "y": 14.88
+                    },
+                    "uuid": "02c30326-3a1c-4074-b2b9-1d953610a184"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 8 [/VBAT_SENSE]",
+                    "pos": {
+                        "x": 3.1375,
+                        "y": 14.825
+                    },
+                    "uuid": "bcbd188d-59fd-402e-8beb-8678a13b43fc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "B.Cu 上 U5 的焊盘 6 [/SPI_SCK]",
+                    "pos": {
+                        "x": 2.3,
+                        "y": 6.835
+                    },
+                    "uuid": "e2067b3a-6545-4d68-8657-a08cf16a3442"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 12 [/SPI_SCK]",
+                    "pos": {
+                        "x": 8.8625,
+                        "y": 15.475
+                    },
+                    "uuid": "8e863b69-1044-455c-99ac-3fc9166b4034"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 13 [/SPI_MISO]",
+                    "pos": {
+                        "x": 8.8625,
+                        "y": 14.825
+                    },
+                    "uuid": "78e31a0e-e788-44cd-894c-46b2ceddbf64"
+                },
+                {
+                    "description": "B.Cu 上 U5 的焊盘 2 [/SPI_MISO]",
+                    "pos": {
+                        "x": 10.1,
+                        "y": 5.565
+                    },
+                    "uuid": "7fec70f6-36d4-4ded-a830-1efeb41c3ae3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "B.Cu 上 U5 的焊盘 5 [/SPI_MOSI]",
+                    "pos": {
+                        "x": 2.3,
+                        "y": 8.105
+                    },
+                    "uuid": "ad49ffa2-49bd-43b7-89ee-b7245d207035"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 14 [/SPI_MOSI]",
+                    "pos": {
+                        "x": 8.8625,
+                        "y": 14.175
+                    },
+                    "uuid": "c437c24d-f9d5-47d7-97d2-9ae233cc583e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U4 的焊盘 13 [/I2C_SCL]",
+                    "pos": {
+                        "x": 5.365,
+                        "y": 21.925
+                    },
+                    "uuid": "41cb263b-f260-48dc-8966-4a43418e67db"
+                },
+                {
+                    "description": "走线 [/I2C_SCL] (F.Cu), 长度: 0.9500 mm",
+                    "pos": {
+                        "x": 8.85,
+                        "y": 10.3
+                    },
+                    "uuid": "87b5626c-d395-40bd-9f10-1a277d29e619"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U3 的焊盘 3 [/I2C_SCL]",
+                    "pos": {
+                        "x": 6.575,
+                        "y": 3.525
+                    },
+                    "uuid": "216c6445-76a6-4401-85fa-7b2f25be2f68"
+                },
+                {
+                    "description": "F.Cu 上 U2 的焊盘 13 [/I2C_SCL]",
+                    "pos": {
+                        "x": 2.3,
+                        "y": 5.0375
+                    },
+                    "uuid": "3fc884ae-4e29-49a9-ac43-eb99a73eef4e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R2 的焊盘 1 [/I2C_SCL]",
+                    "pos": {
+                        "x": 7.99,
+                        "y": 8.4
+                    },
+                    "uuid": "408d7a3c-df6e-4263-83a6-51382df11fd8"
+                },
+                {
+                    "description": "F.Cu 上 U3 的焊盘 3 [/I2C_SCL]",
+                    "pos": {
+                        "x": 6.575,
+                        "y": 3.525
+                    },
+                    "uuid": "216c6445-76a6-4401-85fa-7b2f25be2f68"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [/VBAT] (B.Cu), 长度: 1.7000 mm",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 33.2
+                    },
+                    "uuid": "3f29f642-4e7b-47dd-a395-96cbdb8a17bc"
+                },
+                {
+                    "description": "走线 [/VBAT] (B.Cu), 长度: 0.4667 mm",
+                    "pos": {
+                        "x": 7.87,
+                        "y": 24.65
+                    },
+                    "uuid": "77028d0a-ba67-4e29-a159-b8a7d5ce4af4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [/VBAT] (F.Cu), 长度: 1.9000 mm",
+                    "pos": {
+                        "x": 9.45,
+                        "y": 5.05
+                    },
+                    "uuid": "70e24a33-e3ee-49b3-b100-9f282ced1926"
+                },
+                {
+                    "description": "F.Cu 上 R4 的焊盘 1 [/VBAT]",
+                    "pos": {
+                        "x": 10.55,
+                        "y": 16.909999
+                    },
+                    "uuid": "f8da7136-79b0-481a-976c-de328f3ebae4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R4 的焊盘 1 [/VBAT]",
+                    "pos": {
+                        "x": 10.55,
+                        "y": 16.909999
+                    },
+                    "uuid": "f8da7136-79b0-481a-976c-de328f3ebae4"
+                },
+                {
+                    "description": "走线 [/VBAT] (B.Cu), 长度: 1.9325 mm",
+                    "pos": {
+                        "x": 5.9375,
+                        "y": 24.65
+                    },
+                    "uuid": "9a276599-d5be-451f-a1f0-8767013f4722"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "B.Cu 上 J2 的焊盘 2 [/CHARGE_IN]",
+                    "pos": {
+                        "x": 1.15,
+                        "y": 16.14
+                    },
+                    "uuid": "d496691c-87d1-43e4-a78d-cd2f5cb3bab9"
+                },
+                {
+                    "description": "B.Cu 上 C11 的焊盘 1 [/CHARGE_IN]",
+                    "pos": {
+                        "x": 2.1,
+                        "y": 24.58
+                    },
+                    "uuid": "cdbe1b7a-8d3c-4a9c-8a32-4285217b2541"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

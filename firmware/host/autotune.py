@@ -7,7 +7,6 @@ are never shuffled, and a candidate is promoted only from validation metrics.
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 from dataclasses import dataclass
 from pathlib import Path
@@ -16,20 +15,17 @@ import numpy as np
 from scipy.ndimage import uniform_filter1d
 from scipy.signal import butter, find_peaks, sosfiltfilt
 
+from event_metrics import event_metrics
+from csv_input import load_numeric_csv
+
 
 REQ_AWA = ("timestamp_us", "ax", "ay", "az", "gx", "gy", "gz", "pressure")
 REQ_UW = REQ_AWA + ("tension_gf",)
 
 
 def load_csv(path: Path, required: tuple[str, ...]) -> dict[str, np.ndarray]:
-    with path.open(newline="") as f:
-        rows = list(csv.DictReader(f))
-    if not rows:
-        raise ValueError(f"empty log: {path}")
-    missing = set(required) - set(rows[0])
-    if missing:
-        raise ValueError(f"{path}: missing columns {sorted(missing)}")
-    return {k: np.asarray([float(r[k]) for r in rows], dtype=float) for k in required}
+    columns = load_numeric_csv(path, required)
+    return {name: np.asarray(values, dtype=float) for name, values in columns.items()}
 
 
 def amag(d):
@@ -125,26 +121,6 @@ def features(awa, grid, fs):
     gyro = np.sqrt(uniform_filter1d(highpass(gi, fs, .7)**2, win))
     dp = np.abs(np.gradient(highpass(pi, fs, .25), 1/fs))
     return np.c_[np.abs(robust_scale(acc)), np.abs(robust_scale(gyro)), np.abs(robust_scale(dp))]
-
-
-def event_ranges(y):
-    x = np.r_[False, y, False].astype(np.int8)
-    edges = np.diff(x)
-    return list(zip(np.flatnonzero(edges == 1), np.flatnonzero(edges == -1)))
-
-
-def event_metrics(y, pred, duration_s):
-    truth, found = event_ranges(y), event_ranges(pred)
-    matched = sum(any(max(a,c) < min(b,d) for c,d in found) for a,b in truth)
-    tp = matched
-    fn = len(truth)-matched
-    fp = sum(not any(max(a,c) < min(b,d) for a,b in truth) for c,d in found)
-    precision = tp/(tp+fp) if tp+fp else 0.0
-    recall = tp/(tp+fn) if tp+fn else 0.0
-    f1 = 2*precision*recall/(precision+recall) if precision+recall else 0.0
-    return {"event_f1":f1,"precision":precision,"recall":recall,
-            "false_events_per_hour":fp/max(duration_s/3600,1e-9),
-            "truth_events":len(truth),"detected_events":len(found)}
 
 
 def debounce(raw, fs, minimum_ms, hold_ms=140):

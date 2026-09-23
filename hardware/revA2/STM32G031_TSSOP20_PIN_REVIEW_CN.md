@@ -8,30 +8,31 @@ Rev.A1 自定义 MCU 符号把逻辑功能错误地按 1-20 顺序映射到了�
 
 | 物理脚 | ST 封装脚 | Rev.A2 功能/网络 | 必要配置 |
 |---:|---|---|---|
-| 1 | PB7/PB8 | PB7 / I2C_SDA | I2C1 SDA AF6 |
+| 1 | PB7/PB8 | PB7 / I2C_SDA | I2C1 SDA AF6，开漏。与 PB6 一起初始化；400 kHz 候选 TIMINGR 随 PCLK 变 |
 | 2 | PB9/PC14-OSC32_IN | PC14 / LSE_IN | LSE 模式 |
 | 3 | PC15-OSC32_OUT | PC15 / LSE_OUT | LSE 模式 |
 | 4 | VDD/VDDA | 3V3 | 电源 |
 | 5 | VSS/VSSA | GND | 地 |
 | 6 | PF2-NRST | NRST | 保持复位功能 |
 | 7 | PA0 | IMU_INT | GPIO/EXTI |
-| 8 | PA1 | VBAT_SENSE | ADC 输入 |
-| 9 | PA2 | UART_TX | USART2_TX AF1 |
+| 8 | PA1 | VBAT_SENSE | ADC 输入。R4=180 kΩ（VBAT→感测）、R5=60.4 kΩ（对地），1%。`battery_mv = adc * 132220 / 41223`（名义3.3V参考，未校准） |
+| 9 | PA2 | UART_TX | USART2_TX AF1。115200 8N1；不要改用 PA9。LSE 失败、PCLK=HSI 16 MHz 时 BRR≈139 |
 | 10 | PA3 | UART_RX | USART2_RX AF1 |
-| 11 | PA4 | FLASH_CS | GPIO 输出；外加 R12 10 kΩ 上拉 |
-| 12 | PA5 | SPI_SCK | SPI1_SCK AF0 |
+| 11 | PA4 | FLASH_CS | GPIO 输出；外加 R12 10 kΩ 上拉。必须在 SPI1 SPE 之前拉高 |
+| 12 | PA5 | SPI_SCK | SPI1_SCK AF0，Mode 0（CPOL=0 CPHA=0） |
 | 13 | PA6 | SPI_MISO | SPI1_MISO AF0 |
 | 14 | PA7 | SPI_MOSI | SPI1_MOSI AF0 |
 | 15 | PB0/PB1/PB2/PA8 | PB0 / LED_GATE | GPIO 输出 |
-| 16 | PA11[PA9] | PA9 / REED_WAKE | `SYSCFG_CFGR1.PA11_RMP=1` 后作为 PA9 |
+| 16 | PA11[PA9] | PA9 / REED_WAKE | `SYSCFG_CFGR1.PA11_RMP=1` 后作为 PA9。SW1 常开对地，R10 100 kΩ 上拉；闭合=低；EXTI9 下降沿唤醒。必须先 remap 再配 EXTI |
 | 17 | PA12[PA10] | PA10 / STRAIN_DRDY | `SYSCFG_CFGR1.PA12_RMP=1` 后作为 PA10 |
 | 18 | PA13 | SWDIO | SWD |
 | 19 | PA15/PA14-BOOT0 | PA14 / SWCLK | SWD；检查 BOOT0 选项状态 |
-| 20 | PB3/PB4/PB5/PB6 | PB6 / I2C_SCL | I2C1 SCL AF6 |
+| 20 | PB3/PB4/PB5/PB6 | PB6 / I2C_SCL | I2C1 SCL AF6，开漏 |
 
 ## 固件强制要求
 
 - 初始化任何 PA9/PA10 外设或 EXTI 之前，先开启 SYSCFG 时钟并设置 `PA11_RMP`、`PA12_RMP`。
+- SPI1 必须先把 PA4 `/CS` 拉高再开 SPE；I2C1 用 PB6/PB7 AF6，不要放到 PA9/PA10。
 - CubeMX 中需先在 SYS 页面启用 PA11/PA12 到 PA9/PA10 的 remap，再分配相应功能。
 - 调试阶段不得关闭 PA13/PA14 的 SWD 功能。
 - LSE 启动失败必须有超时和内部时钟降级路径，避免设备无法启动。
