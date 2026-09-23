@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title description">
+  <title id="title">智能阿波钓组概念排布</title>
+  <desc id="description">主线从鱼竿方向进入，经过水面上的阿波、水下靠近鱼钩的张力传感器，连接鱼钩与鱼饵；一条鱼游在鱼饵附近。此图非按比例的装配图。</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1f8f7"/>
+      <stop offset="1" stop-color="#d9edeb"/>
+    </linearGradient>
+    <linearGradient id="sea" x2="0" y2="1">
+      <stop offset="0" stop-color="#74b9c0"/>
+      <stop offset="1" stop-color="#104960"/>
+    </linearGradient>
+    <linearGradient id="float" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f6ab55"/>
+      <stop offset="0.5" stop-color="#f7cf75"/>
+      <stop offset="1" stop-color="#d87543"/>
+    </linearGradient>
+    <linearGradient id="sensor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#224a63"/>
+      <stop offset="0.55" stop-color="#397589"/>
+      <stop offset="1" stop-color="#15384c"/>
+    </linearGradient>
+    <linearGradient id="fish" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a9d8c6"/>
+      <stop offset="0.55" stop-color="#64a99c"/>
+      <stop offset="1" stop-color="#28727b"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#133c4b" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#285c6a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .title{font:700 28px "PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#17384b}
+      .label{font:700 20px "PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#17384b}
+      .detail{font:15px "PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#3d6873}
+      .small{font:14px "PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#d8f2f0}
+      .callout{fill:#ffffff;fill-opacity:.94;stroke:#b9d8d7;stroke-width:1.5}
+      .lead{fill:none;stroke:#285c6a;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="678" rx="22" fill="url(#sky)" stroke="#b7d9d7" stroke-width="2"/>
+  <text x="62" y="57" class="title">钓组概念排布</text>
+  <text x="62" y="84" class="detail">从水面运动，到钩侧张力，再到回收后的数据对照</text>
+
+  <path d="M1 312 C120 307 205 322 310 313 S510 304 620 314 S825 321 950 311 S1115 304 1199 313 L1199 658 Q1199 679 1177 679 L23 679 Q1 679 1 657 Z" fill="url(#sea)"/>
+  <path d="M1 312 C120 307 205 322 310 313 S510 304 620 314 S825 321 950 311 S1115 304 1199 313" fill="none" stroke="#f3fffa" stroke-width="5" stroke-linecap="round" opacity=".95"/>
+  <path d="M24 333 C140 329 210 341 325 333 S515 325 620 334 S820 342 942 332 S1110 324 1176 333" fill="none" stroke="#c4eeeb" stroke-width="2" opacity=".7"/>
+  <text x="1037" y="292" class="detail">水面</text>
+
+  <!-- 连续钓线，先画在器件背后，示意受力路径而非实际打结方式。 -->
+  <path d="M165 117 L427 268 L427 347 L503 409 L503 479 L601 544" fill="none" stroke="#173c50" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="165" cy="117" r="5" fill="#173c50"/>
+  <path d="M164 117 L102 113" class="lead" marker-end="url(#arrow)"/>
+  <text x="61" y="105" class="detail">鱼竿 / 主线方向</text>
+
+  <!-- 阿波：上部露出水面，下部浸在水中。 -->
+  <g filter="url(#softShadow)">
+    <path d="M426 241 L426 206" stroke="#c84f4c" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="426" cy="204" r="6" fill="#f2e5b2" stroke="#c84f4c" stroke-width="2"/>
+    <path d="M405 245 C414 230 438 230 447 245 L451 277 C452 303 444 330 426 350 C408 330 400 303 401 277 Z" fill="url(#float)" stroke="#8f654c" stroke-width="2"/>
+    <path d="M402 292 Q426 302 450 292" fill="none" stroke="#fff4cf" stroke-width="7" opacity=".9"/>
+    <path d="M406 309 Q426 318 446 309" fill="none" stroke="#db694d" stroke-width="5" opacity=".9"/>
+  </g>
+
+  <!-- 水中端：梁位于主体内，主线从两端通过。 -->
+  <g filter="url(#softShadow)">
+    <rect x="477" y="407" width="52" height="75" rx="20" fill="url(#sensor)" stroke="#b6dcdb" stroke-width="2"/>
+    <rect x="490" y="422" width="26" height="45" rx="5" fill="#c0ddd2" fill-opacity=".8"/>
+    <path d="M491 444 L516 444" stroke="#e9f9ed" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="503" cy="412" r="4" fill="#e9f9ed"/>
+    <circle cx="503" cy="478" r="4" fill="#e9f9ed"/>
+  </g>
+
+  <!-- 鱼钩和鱼饵彼此相邻，但鱼未咬钩。 -->
+  <path d="M601 544 C590 554 589 578 605 587 C619 595 631 583 628 570" fill="none" stroke="#d8ece6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M627 570 L635 579" fill="none" stroke="#d8ece6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M591 559 C606 553 621 559 627 571 C618 577 606 576 594 570 Z" fill="#f2ba6a" stroke="#c1785e" stroke-width="2"/>
+  <circle cx="605" cy="563" r="2" fill="#7d5144"/>
+
+  <!-- 鱼朝向鱼饵游来。 -->
+  <g filter="url(#softShadow)">
+    <path d="M955 553 L1056 510 Q1038 552 1055 600 L954 570 Z" fill="#2f7e84" stroke="#174d61" stroke-width="3"/>
+    <path d="M718 556 C749 517 820 502 885 520 C922 531 952 549 977 555 C950 583 913 602 868 609 C799 618 742 596 718 567 L704 561 Z" fill="url(#fish)" stroke="#174d61" stroke-width="3"/>
+    <path d="M838 523 Q867 478 898 482 L914 532" fill="#69ac9f" stroke="#174d61" stroke-width="2.5"/>
+    <path d="M854 604 Q872 628 900 629 L914 594" fill="#52968f" stroke="#174d61" stroke-width="2.5"/>
+    <path d="M763 591 Q774 618 795 621 L808 597" fill="#8fc5ad" stroke="#174d61" stroke-width="2.5"/>
+    <circle cx="752" cy="550" r="6" fill="#163c4e"/>
+    <circle cx="750" cy="548" r="2" fill="#ffffff"/>
+    <path d="M786 534 Q776 558 788 584" fill="none" stroke="#387a78" stroke-width="2.5"/>
+    <path d="M722 564 Q710 575 702 568" fill="none" stroke="#174d61" stroke-width="2" stroke-linecap="round"/>
+    <path d="M822 555 Q848 543 877 551 M826 571 Q864 562 895 571" fill="none" stroke="#d6eee0" stroke-width="3" opacity=".6" stroke-linecap="round"/>
+  </g>
+
+  <circle cx="683" cy="474" r="5" fill="#d2f3ed" opacity=".75"/>
+  <circle cx="699" cy="452" r="3" fill="#d2f3ed" opacity=".6"/>
+  <circle cx="664" cy="497" r="3" fill="#d2f3ed" opacity=".55"/>
+
+  <!-- 浮层与水下标注。 -->
+  <rect x="548" y="169" width="286" height="76" rx="14" class="callout"/>
+  <text x="568" y="201" class="label">阿波 · 水面</text>
+  <text x="568" y="226" class="detail">运动 / 压力记录（设计目标）</text>
+  <path d="M548 222 L469 269" class="lead" marker-end="url(#arrow)"/>
+
+  <rect x="71" y="383" width="324" height="80" rx="14" class="callout"/>
+  <text x="92" y="415" class="label">智能水中 · 靠近钩侧</text>
+  <text x="92" y="441" class="detail">弹性梁记录钓线张力（设计目标）</text>
+  <path d="M395 425 L468 441" class="lead" marker-end="url(#arrow)"/>
+
+  <rect x="202" y="515" width="230" height="72" rx="14" class="callout"/>
+  <text x="222" y="546" class="label">鱼钩 / 鱼饵</text>
+  <text x="222" y="570" class="detail">事件发生的钩侧位置</text>
+  <path d="M432 558 L581 566" class="lead" marker-end="url(#arrow)"/>
+
+  <text x="1006" y="484" class="small">鱼（示意）</text>
+  <text x="57" y="645" class="small">概念示意 · 非按比例 · 线长、结节、配重与安全绳尚需实物钓组确认</text>
+</svg>
