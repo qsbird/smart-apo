@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title description">
   <title id="title">智能阿波钓组概念排布</title>
-  <desc id="description">主线从鱼竿方向进入，经过水面上的阿波、水下靠近鱼钩的张力传感器，连接鱼钩与鱼饵；一条鱼游在鱼饵附近。此图非按比例的装配图。</desc>
+  <desc id="description">主线从鱼竿方向进入，经过水面上的阿波、水下靠近鱼钩的张力传感器，连接鱼钩与鱼饵；一条鱼游在鱼饵附近。阿波设计为记录运动与压力，含STM32、IMU、压力传感器和Flash；水中端设计为用316L弹性梁、应变桥及NAU7802记录钩侧张力，并共用采样和存储硬件。此图非按比例的装配图，功能均未上板验证。</desc>
   <defs>
     <linearGradient id="sky" x2="0" y2="1">
       <stop offset="0" stop-color="#f1f8f7"/>
@@ -99,15 +99,19 @@
   <circle cx="664" cy="497" r="3" fill="#d2f3ed" opacity=".55"/>
 
   <!-- 浮层与水下标注。 -->
-  <rect x="548" y="169" width="286" height="76" rx="14" class="callout"/>
-  <text x="568" y="201" class="label">阿波 · 水面</text>
-  <text x="568" y="226" class="detail">运动 / 压力记录（设计目标）</text>
-  <path d="M548 222 L469 269" class="lead" marker-end="url(#arrow)"/>
+  <rect x="548" y="148" width="508" height="132" rx="14" class="callout"/>
+  <text x="568" y="182" class="label">阿波 · 水面</text>
+  <text x="568" y="211" class="detail">功能：采集运动、角速度与水压；预留 LED 提示</text>
+  <text x="568" y="236" class="detail">硬件：STM32G031 · LSM6DSO · LPS28DFW</text>
+  <text x="568" y="261" class="detail">LiPo 供电 · W25Q256 本地记录（设计）</text>
+  <path d="M548 238 L469 269" class="lead" marker-end="url(#arrow)"/>
 
-  <rect x="71" y="383" width="324" height="80" rx="14" class="callout"/>
-  <text x="92" y="415" class="label">智能水中 · 靠近钩侧</text>
-  <text x="92" y="441" class="detail">弹性梁记录钓线张力（设计目标）</text>
-  <path d="M395 425 L468 441" class="lead" marker-end="url(#arrow)"/>
+  <rect x="57" y="373" width="400" height="132" rx="14" class="callout"/>
+  <text x="78" y="407" class="label">智能水中 · 靠近钩侧</text>
+  <text x="78" y="436" class="detail">功能：采集张力，作为离线辅助标签</text>
+  <text x="78" y="461" class="detail">硬件：316L 梁 · 应变全桥 · NAU7802</text>
+  <text x="78" y="486" class="detail">共用 MCU / IMU / 压力 / Flash（设计）</text>
+  <path d="M457 441 L468 441" class="lead" marker-end="url(#arrow)"/>
 
   <rect x="202" y="515" width="230" height="72" rx="14" class="callout"/>
   <text x="222" y="546" class="label">鱼钩 / 鱼饵</text>
